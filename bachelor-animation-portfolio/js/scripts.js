@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configuration object for images
     const imageConfig = {
         'logo': {
-            src: './images/Creative-Industries-_hrz-gld-blk.png',
+            src: '/Bachelor-of-Animation---Portfolio-Requirements/images/Creative-Industries-_hrz-gld-blk.png',
             alt: 'Creative Industries Logo'
         },
         'character-rotation': {
-            src: './images/Connie_the_Mouse.jpg',
+            src: '/Bachelor-of-Animation---Portfolio-Requirements/images/Connie_the_Mouse.jpg',
             alt: 'Connie the Mouse Character Rotation Example'
         },
         'storyboard-template': {
-            src: './images/Storyboard_Panels.jpg',
+            src: '/Bachelor-of-Animation---Portfolio-Requirements/images/Storyboard_Panels.jpg',
             alt: 'Storyboard Template Example'
         }
     };
