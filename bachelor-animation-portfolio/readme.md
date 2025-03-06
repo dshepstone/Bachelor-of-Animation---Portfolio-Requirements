@@ -1,4 +1,4 @@
-# Bachelor of Animation Portfolio Guidelines
+# Bachelor of Animation Portfolio Guidelines 1
 
 This repository contains the official portfolio submission guidelines for the Conestoga College Bachelor of Animation program for 2025 applicants.
 
@@ -14,7 +14,7 @@ The website is organized into the following sections:
 
 ## Development
 
-This site is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages.
+This site is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages.   
 
 ### File Structure
 
