@@ -24,10 +24,56 @@ body {
     padding: 0;
 }
 
-/* Navigation */
+/* Header with logo in corner */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0;
+}
+
+.header-top {
+    padding: 2rem 1rem 1rem;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.college-logo {
+    flex-shrink: 0;
+}
+
+.college-logo img {
+    width: 200px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.header-subtitle {
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Navigation styling - improved spacing */
 .main-nav {
     background-color: var(--secondary-color);
     padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .main-nav .container {
@@ -36,18 +82,47 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.main-nav a {
+.logo {
+    display: block;
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
     transition: var(--transition);
+    margin-right: 0.5rem;
+    white-space: nowrap;
+}
+
+.logo:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: var(--transition);
+    white-space: nowrap;
+    display: block;
+    text-align: center;
 }
 
 .nav-links li a:hover {
@@ -62,25 +137,6 @@ body {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-/* Header Styles */
-header {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /* Main Content */
@@ -245,7 +301,29 @@ header p {
 .content-section strong {
     color: var(--secondary-color);
 }
+.content-section {
+    margin-bottom: 2rem;
+}
 
+/* Add the new section-title style here */
+.section-title {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
+.content-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
 /* Download button */
 .download-btn {
     display: inline-block;
@@ -285,13 +363,38 @@ footer a {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .header-top .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .college-logo {
+        margin-top: 1rem;
+    }
+    
+    .college-logo img {
+        width: 150px;
+    }
+    
+    .main-nav .container {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    
     .mobile-menu-btn {
         display: block;
+        margin-left: auto;
     }
     
     .nav-links {
         position: absolute;
-        top: 60px;
+        top: 170px;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -307,6 +410,7 @@ footer a {
     
     .nav-links li {
         width: 100%;
+        margin: 0;
     }
     
     .nav-links li a {
@@ -315,14 +419,6 @@ footer a {
         text-align: center;
     }
     
-    header h1 {
-        font-size: 1.7rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
     .accordion-header h2 {
         font-size: 1.1rem;
     }
